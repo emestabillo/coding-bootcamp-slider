@@ -18,13 +18,12 @@ html {
   font-size: 32px;
 }
 
-html,
 body {
   height: 100%;
-}
-
-body {
   font-family: "Inter", sans-serif;
+  background: url(/images/pattern-curve.svg) no-repeat;
+  background-position: left bottom;
+  background-size: 80%;
 }
 
 .wrapper {
@@ -33,16 +32,21 @@ body {
   margin: 0 auto;
 }
 
-.inner {
+.slider {
   width: 100%;
   max-width: 42.75rem;
-  margin: 0 auto;
+  margin: 0 auto 2.34rem;
   height: inherit; /* inherit the height of the parent*/
   padding: 0.78rem;
 }
 
 article {
   text-align: center;
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .avatar {
@@ -53,7 +57,7 @@ article {
   align-items: center;
 }
 
-.user {
+.avatar img {
   width: 7.9rem;
   height: 7.9rem;
   margin: 0 auto;
@@ -76,13 +80,40 @@ article {
   margin: 0 auto;
 }
 
-.arrows > img {
+.arrows img {
   height: 14px;
   width: 10px;
 }
 
 .review {
+  /* font-size: 0.5rem; */
+  position: relative;
+}
+
+.review img {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.56rem;
+  top: 0.7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+p {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 0.6rem;
+}
+
+h5 {
   font-size: 0.5rem;
+}
+
+.occupation {
+  color: var(--grayish-blue);
+  font-weight: 500;
 }
 
 .attribution {
