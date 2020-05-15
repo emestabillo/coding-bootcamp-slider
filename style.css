@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 32px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 90rem; /*1440px; */
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  max-width: 42.75rem;
+  margin: 0 auto;
+  height: inherit; /* inherit the height of the parent*/
+  padding: 0.78rem;
+}
+
+article {
+  text-align: center;
+}
+
+.avatar {
+  background: url(/images/pattern-bg.svg) no-repeat center;
+  background-size: cover;
+  height: 10.2rem;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 7.9rem;
+  height: 7.9rem;
+  margin: 0 auto;
+}
+
+.review {
+  font-size: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
