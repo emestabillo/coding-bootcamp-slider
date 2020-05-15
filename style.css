@@ -47,16 +47,38 @@ article {
 
 .avatar {
   background: url(/images/pattern-bg.svg) no-repeat center;
-  background-size: cover;
+  background-size: contain;
   height: 10.2rem;
   display: flex;
   align-items: center;
 }
 
-img {
+.user {
   width: 7.9rem;
   height: 7.9rem;
   margin: 0 auto;
+  position: relative;
+  box-shadow: -3px 41px 70px -52px rgba(81, 67, 190, 1);
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffff;
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 1.12rem;
+  top: 9.2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.arrows > img {
+  height: 14px;
+  width: 10px;
 }
 
 .review {
