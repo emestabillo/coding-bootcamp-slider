@@ -40,13 +40,14 @@ body {
   padding: 0.78rem;
 }
 
-article {
-  text-align: center;
-  display: none;
+@media screen and (max-width: 768px) {
+  .slider {
+    max-width: 16rem;
+  }
 }
 
-.active {
-  display: block;
+.professional {
+  text-align: center;
 }
 
 .avatar {
@@ -65,24 +66,9 @@ article {
   box-shadow: -3px 41px 70px -52px rgba(81, 67, 190, 1);
 }
 
-.arrows {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: #ffff;
-  border-radius: 1rem;
-  width: 2.5rem;
-  height: 1.12rem;
-  top: 9.2rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.arrows img {
-  height: 14px;
-  width: 10px;
+.arrows img:hover {
+  color: var(--dark-blue);
+  transform: scale(1.5);
 }
 
 .review {
@@ -114,6 +100,28 @@ h5 {
 .occupation {
   color: var(--grayish-blue);
   font-weight: 500;
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffff;
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 1.12rem;
+  top: 9.2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.arrows img {
+  height: 14px;
+  width: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .attribution {
