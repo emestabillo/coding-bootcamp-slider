@@ -18,6 +18,12 @@ html {
   font-size: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  html {
+    height: 100%;
+  }
+}
+
 body {
   height: 100%;
   font-family: "Inter", sans-serif;
@@ -34,20 +40,29 @@ body {
 
 .slider {
   width: 100%;
-  max-width: 42.75rem;
+  max-width: 16rem;
+
   margin: 0 auto 2.34rem;
   height: inherit; /* inherit the height of the parent*/
   padding: 0.78rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .slider {
-    max-width: 16rem;
+    max-width: 42.75rem;
   }
 }
 
 .professional {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .professional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .avatar {
@@ -56,6 +71,12 @@ body {
   height: 10.2rem;
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .avatar {
+    order: 2;
+    width: 50%;
+  }
 }
 
 .avatar img {
@@ -66,6 +87,13 @@ body {
   box-shadow: -3px 41px 70px -52px rgba(81, 67, 190, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .avatar img {
+    /* width: 16.975rem;
+      height: 16.875rem; */
+  }
+}
+
 .arrows img:hover {
   color: var(--dark-blue);
   transform: scale(1.5);
@@ -74,6 +102,12 @@ body {
 .review {
   /* font-size: 0.5rem; */
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .review {
+    width: 50%;
+  }
 }
 
 .review img {
