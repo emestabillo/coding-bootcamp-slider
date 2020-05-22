@@ -9,6 +9,7 @@ function plusSlides(n) {
 function showSlides(n) {
   let i;
   const slides = document.getElementsByTagName("article");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
