@@ -30,6 +30,7 @@ body {
   background-size: 80%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -37,14 +38,17 @@ body {
   width: 100%;
   height: 100%;
   max-width: 45rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 .slider {
   width: 100%;
   max-width: 16rem;
-  height: inherit;
   margin: 0 auto;
   padding: 0.78rem;
+  position: relative;
 }
 
 .professional {
@@ -61,7 +65,6 @@ article {
   height: 10.2rem;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .avatar img {
@@ -80,10 +83,6 @@ article {
   border-radius: 1rem;
   width: 2.5rem;
   height: 1.2rem;
-  top: 9.3rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 
 .arrows img {
@@ -156,6 +155,14 @@ h5 {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .arrows {
+    top: 9.2rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   body {
     background-size: 45%;
@@ -220,11 +227,8 @@ h5 {
   }
 
   .arrows {
-    bottom: 2.9rem;
-    top: auto;
-    left: 7.7rem;
-    height: 1.5rem;
-    width: 2.9rem;
+    bottom: 1.8rem;
+    right: 11.5rem;
   }
 
   .arrows img {
@@ -233,7 +237,7 @@ h5 {
 }
 
 @media screen and (min-width: 1441px) {
-  .wrapper {
+  .slider {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 }
