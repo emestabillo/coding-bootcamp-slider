@@ -64,6 +64,7 @@ body {
   width: 7.9rem;
   height: 7.9rem;
   margin: 0 auto;
+  border-radius: 5px;
   box-shadow: -3px 41px 70px -52px rgba(81, 67, 190, 1);
 }
 
@@ -92,6 +93,7 @@ body {
 
 .review {
   position: relative;
+  color: var(--dark-blue);
 }
 
 .review img {
