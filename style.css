@@ -13,11 +13,6 @@
   box-sizing: inherit;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
   box-sizing: border-box;
   font-size: 32px;
@@ -36,7 +31,6 @@ body {
 
 .wrapper {
   width: 100%;
-  height: 100%;
   max-width: 45rem;
 }
 
@@ -158,6 +152,14 @@ h5 {
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 375px) {
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 450px) {
   .avatar {
     background-size: contain;
@@ -204,6 +206,7 @@ h5 {
     order: 2;
     height: 17.3rem;
     background-size: 100% 100%;
+    transform: translateY(0.5rem);
   }
 
   .avatar img {
@@ -248,7 +251,7 @@ h5 {
   }
 
   .arrows {
-    bottom: 1.8rem;
+    bottom: 1.2rem;
     right: 11.5rem;
     width: 3rem;
     height: 1.5rem;
@@ -256,11 +259,5 @@ h5 {
 
   .arrows img {
     height: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  .slider {
-    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
   }
 }
