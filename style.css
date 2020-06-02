@@ -114,10 +114,10 @@ body {
 }
 
 .arrows img {
-  /* height: 14px;
-  width: 10px; */
-  height: 1.4rem;
-  width: 1rem;
+  height: 14px;
+  width: 10px;
+  /* height: 1.4rem;
+  width: 1rem; */
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -166,8 +166,8 @@ h5 {
 }
 
 .attribution {
-  /* font-size: 11px; */
-  font-size: 1.2rem;
+  font-size: 11px;
+  /* font-size: 1.2rem; */
   text-align: center;
 }
 
@@ -194,12 +194,32 @@ h5 {
 
 @media screen and (min-width: 600px) {
   html {
-    font-size: 38px;
+    /* 14px */
+    font-size: 87.5%;
+  }
+  .avatar {
+    height: 29rem;
   }
 
   .avatar img {
-    width: 8.2rem;
-    height: 8.2rem;
+    /* width: 8.2rem;
+    height: 8.2rem; */
+    width: 23.3rem;
+    height: 23.3rem;
+  }
+
+  .arrows {
+    top: 26.8rem;
+    height: 3.2rem;
+    width: 7rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .review img {
+    top: 2.5rem;
   }
 }
 
