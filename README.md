@@ -4,8 +4,12 @@
 
 ## Solution preview
 
-![Solution preview for the Coding Bootcamp Testimonials Slider coding challenge](images/bootcamp-slider-solution.gif)
-_Solution preview by [Frontend Mentor](https://www.frontendmentor.io/solutions/mobilefirst-with-flexbox-and-oldfashioned-css-2woK6yE1s)_
+<p align="center">
+  <img src="images/bootcamp-slider-solution.gif">
+</p>
+<p align="center">
+   Solution preview by <a href="https://www.frontendmentor.io/solutions/mobilefirst-with-flexbox-and-oldfashioned-css-2woK6yE1s">Frontend Mentor</a>
+</p>
 
 ## The challenge
 
@@ -20,6 +24,6 @@ User Stories:
 - View the optimal layout for the component depending on their device's screen size
 - Navigate the slider using either their mouse/trackpad or keyboard
 
-## Tools
+## Technologies I used
 
-- SCSS, BEM, Flexbox, [Perfect Pixel](https://www.welldonecode.com/perfectpixel)
+- Javascript, SCSS, BEM, Flexbox, [Perfect Pixel](https://www.welldonecode.com/perfectpixel)
